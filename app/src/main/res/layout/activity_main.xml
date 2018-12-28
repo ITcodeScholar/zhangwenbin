@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/today_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@drawable/bg6">
+
+        <RelativeLayout
+            android:id="@+id/todayinfo2_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/todayinfo1_relative">
+
+            <LinearLayout
+                android:id="@+id/todayinfo2_linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/thumbnailIcon"
+                    android:layout_width="155dp"
+                    android:layout_height="128dp"
+
+                    android:src="@drawable/d00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/todayinfo2_linear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/todayinfo2_linear1"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_week"
+                    android:layout_width="230dp"
+
+                    android:layout_height="wrap_content"
+                    android:text="今天 星期三"
+                    android:textColor="#FFFFFF"
+                    android:textSize="27.0sp"></TextView>
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="2摄氏度～7摄氏度"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20.0sp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="晴"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20.0sp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_dressing_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="寒冷"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20.0sp"></TextView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <RelativeLayout
+                android:id="@+id/f1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_above="@+id/f2"
+                android:layout_alignParentStart="true"
+                android:background="#ae6da1c7">
+
+                <TextView
+                    android:id="@+id/tv_fu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/tp1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/background_light" />
+
+                <ImageView
+                    android:id="@+id/tp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:src="@drawable/d00" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/f5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:background="#ae6da1c7">
+
+
+                <TextView
+                    android:id="@+id/tv_fu5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/tp5"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/background_light" />
+
+                <ImageView
+                    android:id="@+id/tp5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="13dp"
+                    android:src="@drawable/d00" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/f3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_above="@+id/f4"
+                android:layout_alignParentStart="true"
+                android:background="#ae6da1c7">
+
+                <TextView
+                    android:id="@+id/tv_fu3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/tp3"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHighlight="@android:color/background_light" />
+
+                <ImageView
+                    android:id="@+id/tp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:src="@drawable/d00" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/f4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_above="@+id/f5"
+                android:layout_alignParentStart="true"
+                android:background="#7300eeff">
+
+                <TextView
+                    android:id="@+id/tv_fu4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/tp4"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/background_light" />
+
+                <ImageView
+                    android:id="@+id/tp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/d00" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/f2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_above="@+id/f3"
+                android:layout_alignParentStart="true"
+                android:background="#7300eeff">
+
+                <ImageView
+                    android:id="@+id/tp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/d00" />
+
+                <TextView
+                    android:id="@+id/tv_fu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/tp2"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/background_light" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/todayinfo1_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingTop="0dp">
+
+            <TextView
+                android:id="@+id/nowtemp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="70dp"
+                android:gravity="center_horizontal"
+                android:paddingRight="0dp"
+                android:text="12°"
+                android:textColor="#fff"
+                android:textSize="75sp"
+                app:layout_constraintStart_toEndOf="@+id/thumbnailIcon"
+                app:layout_constraintTop_toBottomOf="@+id/tv_province_city" />
+
+            <LinearLayout
+                android:id="@+id/todayinfo1_linear3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/nowtemp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="东北风微风"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wind_direction"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/todayinfo1_linear3"
+                    android:layout_below="@+id/tv_province_city"
+                    android:text="西北风"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wind_strength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1级"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shidu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:text="湿度:57％"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/todayinfo1_linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_changcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_province_city"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="【切换城市】"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/tv_province_city"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/todayinfo1_linear3"
+            android:layout_toStartOf="@+id/nowtemp"
+            android:paddingStart="10dp"
+            android:text="江西省新余市"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:text="发布时间:18:25"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
